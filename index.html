@@ -1,94 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🧪 HTML · CSS · JS sandbox</title>
-  <!-- separate CSS file (styles.css) -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- optional: you can also add a favicon or meta tags here -->
+    <!-- Character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title (appears in browser tab) -->
+    <title>My Basic HTML Template</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- You can also add internal CSS here if needed -->
+    <style>
+        /* Internal CSS (optional) - remove if using only external */
+    </style>
 </head>
 <body>
-  <!-- ====== MAIN SANDBOX ====== -->
-  <main class="sandbox">
-
-    <h1>🧪 MVC‑style sandbox</h1>
-    <p class="subhead">image + elements · CSS · JS</p>
-
-    <!-- ====== IMAGE EXPERIMENT ====== -->
-    <section class="card" id="image-card">
-      <h2>🖼️ Image manipulation</h2>
-      <div class="image-wrapper">
-        <!-- 
-          free placeholder image – replace src with your own 
-          the CSS and JS will both target this img 
-        -->
-        <img 
-          id="demo-image" 
-          src="https://picsum.photos/id/237/300/200" 
-          alt="A playful puppy (placeholder)" 
-          width="300" 
-          height="200"
-          loading="lazy"
-        >
-      </div>
-      <div class="action-group">
-        <button data-action="rotate">🔄 rotate</button>
-        <button data-action="grayscale">⚫ grayscale</button>
-        <button data-action="reset">↺ reset</button>
-      </div>
-      <p class="caption">CSS filters + JS class toggles</p>
-    </section>
-
-    <!-- ====== ELEMENT PLAYGROUND ====== -->
-    <section class="card" id="element-card">
-      <h2>🧩 Elements · events · styles</h2>
-
-      <!-- text & typography -->
-      <div class="element-row">
-        <p id="text-demo" class="demo-text">✏️ click me → change text & color</p>
-        <button id="text-btn">change text</button>
-      </div>
-
-      <!-- box model / shape -->
-      <div class="element-row">
-        <div id="box-demo" class="demo-box">⬜ box</div>
-        <div class="btn-group">
-          <button id="box-size-btn">grow</button>
-          <button id="box-color-btn">random color</button>
-          <button id="box-reset-btn">reset</button>
-        </div>
-      </div>
-
-      <!-- list / dynamic content -->
-      <div class="element-row">
-        <ul id="list-demo" class="demo-list">
-          <li>🍎 apple</li>
-          <li>🍌 banana</li>
-          <li>🍒 cherry</li>
-        </ul>
-        <div class="btn-group">
-          <button id="add-item-btn">➕ add fruit</button>
-          <button id="remove-item-btn">➖ remove last</button>
-        </div>
-      </div>
-
-      <!-- input + live preview -->
-      <div class="element-row">
-        <label for="input-demo">✍️ type something:</label>
-        <input type="text" id="input-demo" placeholder="hello world" value="MVC">
-        <span id="input-preview" class="preview-badge">MVC</span>
-      </div>
-    </section>
-
-    <!-- ====== FOOTER / hint ====== -->
-    <footer class="footnote">
-      <p>📁 separate files: <code>styles.css</code> · <code>script.js</code></p>
-      <p>🔍 open DevTools (F12) to inspect elements & console</p>
+    <!-- ===== ALL VISIBLE CONTENT GOES HERE ===== -->
+    
+    <header>
+        <h1>Hello, World!</h1>
+        <p>This is a basic HTML template.</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Content Section</h2>
+            <p>Add your content here.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026</p>
     </footer>
-  </main>
-
-  <!-- ====== separate JavaScript file ====== -->
-  <script src="script.js"></script>
+    
+    <!-- ===== SCRIPTS GO AT THE END OF BODY ===== -->
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    
+    <!-- Internal JavaScript (optional) -->
+    <script>
+        // Your JavaScript code here
+        console.log('Page loaded!');
+    </script>
 </body>
 </html>
